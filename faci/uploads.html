@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spill Your Tea - Post</title>
+</head>
+<body>
+  <h1>Create a New Post</h1>
+  <form action="/post" method="POST">
+    <textarea name="content" placeholder="Write your post here..."></textarea>
+    <button type="submit">Post</button>
+  </form>
+
+  <h2>Upload Media</h2>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="media" accept="image/*,video/*" required />
+    <input type="hidden" name="post_id" value="1" /> 
+    <select name="media_type" required>
+      <option value="image">Image</option>
+      <option value="video">Video</option>
+    </select>
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html>

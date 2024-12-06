@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header class="profile-header">
+    <div class="cover-photo">
+      <img id="cover-photo" src="images/github.png" alt="Cover Photo">
+      <input type="file" id="cover-upload" class="upload-input" onchange="changeCoverPhoto(event)">
+    </div>
+    <div class="profile-info">
+      <div class="profile-picture">
+        <img id="profile-photo" src="images/cat.png" alt="Profile Picture">
+        <input type="file" id="profile-upload" class="upload-input" onchange="changeProfilePhoto(event)">
+      </div>
+      <div class="user-details">
+        <h1 id="profile-name">Pinky Swear</h1>
+        <p id="profile-bio">Web Developer | Tech Enthusiast</p>
+        <button onclick="openEditModal()">Edit Profile</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="edit-profile-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeEditModal()">&times;</span>
+      <h2>Edit Profile</h2>
+      <form id="edit-profile-form">
+        <div>
+          <label for="edit-name">Name</label>
+          <input type="text" id="edit-name" placeholder="Enter your name">
+        </div>
+        <div>
+          <label for="edit-bio">Bio</label>
+          <textarea id="edit-bio" placeholder="Tell us about yourself"></textarea>
+        </div>
+        <div>
+          <label for="edit-profile-photo">Profile Picture</label>
+          <input type="file" id="edit-profile-photo" class="upload-input">
+        </div>
+        <div>
+          <label for="edit-cover-photo">Cover Photo</label>
+          <input type="file" id="edit-cover-photo" class="upload-input">
+        </div>
+        <button type="button" onclick="saveProfileChanges()">Save Changes</button>
+        <button type="button" onclick="closeEditModal()">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <nav class="profile-nav">
+    <ul>
+      <li><a href="#" class="active">Posts</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Friends</a></li>
+      <li><a href="#">Photos</a></li>
+    </ul>
+  </nav>
+
+  
+  <div class="profile-feed">
+    <div class="post-box">
+      <textarea placeholder="What's on your mind?" id="post-textarea"></textarea>
+      <button onclick="postMessage()">Post</button>
+    </div>
+
+    <div id="post-feed">
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Spill Your Tea, Inc.</p>
+  </footer>
+
+  <script src="profile.js"></script>
+</body>
+</html>

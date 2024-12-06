@@ -1,0 +1,85 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fce4ec; 
+}
+
+header {
+    background-color: #d81b60; 
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header .navbar a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+header .navbar .active {
+    font-weight: bold;
+}
+
+.notification-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.notification-page h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.notification-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #f1c6d8; 
+}
+
+.notification-item p {
+    margin: 5px 0;
+}
+
+.notification-item a {
+    color: #d81b60; 
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.notification-item a:hover {
+    color: #c2185b; 
+}
+
+.notification-item .time {
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: 5px;
+    display: block;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7; 
+    color: #555;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

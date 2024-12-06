@@ -1,0 +1,137 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #d81b60; 
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo h1 {
+    margin: 0;
+  }
+  
+  .navbar-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .friend-list-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .friend-list-container h2 {
+    color: #d81b60;
+    text-align: center;
+  }
+  
+  .friend-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .friend-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #f1c6d8;
+    margin-bottom: 10px;
+  }
+  
+  .friend-item:last-child {
+    border-bottom: none;
+  }
+  
+  .friend-profile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .friend-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .friend-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .friend-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .friend-action {
+    padding: 8px 15px;
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .friend-action:hover {
+    background-color: #c2185b;
+  }
+  
+  .friend-action:active {
+    background-color: #880e4f;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .friend-list-container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .friend-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .friend-profile img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .friend-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .friend-action {
+      margin-top: 10px;
+    }
+  }
+  

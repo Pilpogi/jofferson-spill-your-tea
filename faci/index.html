@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Spill Your Tea</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>Spill Your Tea</h1>
+      </div>
+      <div class="navbar-links">
+        <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+        <a href="ffriends.html" title="Friends"><i class="fas fa-users"></i></a>
+        <a href="notif.html" title="Notifications"><i class="fas fa-bell"></i></a>
+        <a href="profile.html" title="user-profile"><i class="fas fa-user"></i></a>
+      </div>
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Search SYT">
+        <button id="searchButton">Search</button>
+      </div>    
+      <a href="profile.html" class="user-profile">
+        <img src="images/github.png" alt="Profile Image">
+        <span>Pinky Swear</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="feed">
+    <div class="post-box">
+      <textarea placeholder="What do we need to know?" id="postText"></textarea>
+      <input type="file" id="mediaInput" accept="image/*, video/*" />
+      <button onclick="postMessage()">Post</button>
+    </div>
+
+    <!-- Fixed Images as Posts -->
+    <div class="post">
+      <div class="post-header">
+        <img src="images/github.png" alt="User Avatar" class="post-avatar">
+        <div class="post-username">Pinky Swear</div>
+        <div class="post-time">Just now</div>
+      </div>
+      <div class="post-content">
+        <p>Check out this cool photo!</p>
+      </div>
+      <div class="post-media">
+        <img src="images/cat-lover.png" alt="Image 1" class="post-media-img">
+      </div>
+      <div class="post-actions">
+        <button>Like</button>
+        <button>Comment</button>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <img src="images/github.png" alt="User Avatar" class="post-avatar">
+        <div class="post-username">Pinky Swear</div>
+        <div class="post-time">10 mins ago</div>
+      </div>
+      <div class="post-content">
+        <p>Hi people!!</p>
+      </div>
+      <div class="post-media">
+      </div>
+      <div class="post-actions">
+        <button>Like</button>
+        <button>Comment</button>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <img src="images/ket.png" alt="User Avatar" class="post-avatar">
+        <div class="post-username">Pinku</div>
+        <div class="post-time">1 hour ago</div>
+      </div>
+      <div class="post-content">
+        <p>Here's a third example!</p>
+      </div>
+      <div class="post-media">
+        <img src="images/cat.png" alt="Image 3" class="post-media-img">
+      </div>
+      <div class="post-actions">
+        <button>Like</button>
+        <button>Comment</button>
+      </div>
+    </div>
+
+    <div class="post" id="post-feed">
+      <!-- Posts will be added here dynamically -->
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Spill Your Tea, Inc.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

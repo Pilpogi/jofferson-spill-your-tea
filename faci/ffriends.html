@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Find Friends</title>
+  <link rel="stylesheet" href="ffriends.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>Spill Your Tea</h1>
+      </div>
+      <div class="navbar-links">
+        <a href="index.html" title="Home"><i class="fas fa-home"></i> Home</a>
+        <a href="find-friends.html" title="Find Friends"><i class="fas fa-search"></i> Find Friends</a>
+        <a href="profile.html" title="Profile"><i class="fas fa-user"></i> Profile</a>
+      </div>
+      <a href="profile.html" class="user-profile">
+        <img src="images/github.png" alt="Profile Image">
+        <span>Pinky Swear</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="find-friends">
+    <h2>Find Friends</h2>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for friends...">
+      <button onclick="searchFriends()">Search</button>
+    </div>
+    
+    <div id="friendSuggestions" class="friend-suggestions">
+      
+      <div class="friend-item">
+        <img src="https://via.placeholder.com/50" alt="Friend 1">
+        <div class="friend-info">
+          <span>Jane Doe</span>
+          <button onclick="addFriend('Jane Doe')">Add Friend</button>
+        </div>
+      </div>
+      <div class="friend-item">
+        <img src="https://via.placeholder.com/50" alt="Friend 2">
+        <div class="friend-info">
+          <span>Mark Smith</span>
+          <button onclick="addFriend('Mark Smith')">Add Friend</button>
+        </div>
+      </div>
+      <div class="friend-item">
+        <img src="https://via.placeholder.com/50" alt="Friend 3">
+        <div class="friend-info">
+          <span>Alice Johnson</span>
+          <button onclick="addFriend('Alice Johnson')">Add Friend</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Spill Your Tea</p>
+  </footer>
+
+  <script src="ffriends.js"></script>
+</body>
+</html>
